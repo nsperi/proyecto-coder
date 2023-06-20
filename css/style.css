@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+html {
+    font-family: "Montserrat";
+    background-color: #b1ba8e;
+    color: #2c1001;
+}
+
+nav{
+    padding: 10px;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+.menu li {
+    display: inline;
+    border-right: 1px solid #9B9A9A;
+    list-style: none outside none;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 10%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.menu li:hover{
+    background-color: #d4ddb1;
+}
+
+.menu li:last-child{
+    border-right: none;
+}
+
+.titulo{
+    min-height: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#titulo-principal {
+    font-family: "Monoton";
+    font-size: 100px;
+}
+
+.caja-fondo{
+    height: 160vh;
+    resize: both;
+    overflow: auto;
+    background-image: url(../images/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer{
+    padding: 10px;
+
+}
+
+.formulario{
+    display: grid;
+    grid-template-columns: 300px 100px;
+}
+
+
+
+.titulo-seccion{
+    margin: 20px;
+}
+
+.contenedor-cat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.caja-seccion{
+    width: 300px;
+    height: 300px;
+    
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.contenedor-cat .caja-seccion img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor-pelicula{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.caja-pelicula{
+    width: 800px;
+    height: 500px;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.contenedor-pelicula .caja-pelicula img{
+    object-fit: cover;
+    width: 80%;
+    height: 60%;
+    object-fit: contain;
+}
+
+input:checked ~ ul{
+    display: block;
+    visibility: hidden;
+}
+
+.icono-b{
+    display: none;
+    visibility: hidden;
+}
+
+@media (min-width: 375px) and (max-width: 420px){
+    nav .menu{
+        display: none;
+    }
+
+    input:checked ~ ul{
+        display: block;
+    }
+
+    nav input{
+        display: none;
+        visibility: hidden;
+    }
+
+    .icono-b{
+        box-sizing: border-box;
+        display: inline-block;
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-weight: bold;
+        text-align: center;
+        user-select: none;
+    }
+
+    menu .li{
+        display: block;
+        background: lightgrey;
+        margin: 0;
+        padding: 10px;
+        list-style: none;
+        border-bottom: 1px solid grey;
+    }
+}
+
+@media (min-width: 1024px) and(max-width: 1200px) {
+    .burger{
+        display: none;
+        visibility: hidden;
+    }
+    .icono-b{
+        display: none;
+    }
+}
+
