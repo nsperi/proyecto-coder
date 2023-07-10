@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+
+$color-fondo: #b1ba8e;
+$color-fuente: #2c1001;
+$fuente: "Montserrat";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+html {
+    font-family: $fuente;
+    background-color: $color-fondo;
+    color: $color-fuente;
+}

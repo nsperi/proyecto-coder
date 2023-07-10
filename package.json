@@ -1,0 +1,22 @@
+{
+  "name": "proyecto-coder",
+  "version": "1.0.0",
+  "description": "proyecto de curso",
+  "main": "index.html",
+  "scripts": {
+    "test": "n"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nsperi/proyecto-coder.git"
+  },
+  "keywords": [
+    "cursocoder"
+  ],
+  "author": "Natalia Peripolli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nsperi/proyecto-coder/issues"
+  },
+  "homepage": "https://github.com/nsperi/proyecto-coder#readme"
+}

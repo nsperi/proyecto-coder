@@ -1,0 +1,31 @@
+.caja-fondo{
+    background: #fff url(../images/fondo.jpg) center center/cover no-repeat;
+    .titulo{
+        min-height: 900px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        #titulo-principal {
+            font-family: "Monoton";
+            font-size: 150px;
+            text-shadow: -15px -13px 5px #434343;
+            animation: myAnim 2s ease 0s 1 normal forwards;
+            @keyframes myAnim {
+                0%,
+                50%,
+                100% {
+                    opacity: 1;
+                }
+            
+                25%,
+                75% {
+                    opacity: 0;
+                }
+            }
+        }
+    }
+}
+
+.titulo-seccion{
+    margin: 20px;
+}
