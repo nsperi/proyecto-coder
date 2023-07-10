@@ -1,18 +1,208 @@
-/* Error: expected selector.
- *    ,
- * 24 |     .contenedor/cat{
- *    |                ^
- *    '
- *   scss\pages\_categorias.scss 24:16  @import
- *   scss\main.scss 7:9                 root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: expected selector.\a    \2577 \a 24 \2502      .contenedor/cat{\d\a    \2502                 ^\a    \2575 \a   scss\\pages\\_categorias.scss 24:16  @import\a   scss\\main.scss 7:9                 root stylesheet";
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+html {
+  font-family: "Montserrat";
+  background-color: #b1ba8e;
+  color: #2c1001;
+}
+
+.caja-fondo {
+  background: #fff url(../images/fondo.jpg) center center/cover no-repeat;
+}
+.caja-fondo .titulo {
+  min-height: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.caja-fondo .titulo #titulo-principal {
+  font-family: "Monoton";
+  font-size: 150px;
+  text-shadow: -15px -13px 5px #434343;
+  animation: myAnim 2s ease 0s 1 normal forwards;
+}
+@keyframes myAnim {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
+
+.titulo-seccion {
+  margin: 20px;
+}
+
+footer {
+  padding: 10px;
+}
+footer .formulario {
+  display: grid;
+  grid-template-columns: 300px 100px;
+}
+
+nav {
+  padding: 10px;
+  font-weight: bold;
+}
+nav .menu {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+nav .menu li {
+  display: inline;
+  border-right: 1px solid #9B9A9A;
+  list-style: none outside none;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 10%;
+}
+nav .menu li:hover {
+  background-color: #b1ba8e;
+}
+nav .menu li:last-child {
+  border-right: none;
+}
+nav .menu li a {
+  text-decoration: none;
+}
+
+@media (min-width: 375px) and (max-width: 420px) {
+  nav .menu {
+    display: none;
+  }
+  input:checked ~ ul {
+    display: block;
+  }
+  nav input {
+    display: none;
+    visibility: hidden;
+  }
+  .icono-b {
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+  }
+  menu .li {
+    display: block;
+    background: lightgrey;
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    border-bottom: 1px solid grey;
+  }
+}
+.contenedor-cat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.contenedor-cat .caja-seccion {
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+  overflow: hidden;
+}
+.contenedor-cat .caja-seccion img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  padding: auto;
+}
+
+@media (min-width: 375px) and (max-width: 420px) {
+  .contenedor-cat {
+    display: block;
+  }
+}
+.contenedor-pelicula {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.contenedor-pelicula .caja-pelicula {
+  width: 800px;
+  height: 500px;
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+  overflow: hidden;
+}
+.contenedor-pelicula .caja-pelicula img {
+  object-fit: cover;
+  width: 80%;
+  height: 60%;
+  object-fit: contain;
+  animation: myAnim 2s ease 0s 1 normal forwards;
+}
+@keyframes myAnim {
+  0%, 100% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
+  15% {
+    transform: translateX(-30px) rotate(6deg);
+  }
+  30% {
+    transform: translateX(15px) rotate(-6deg);
+  }
+  45% {
+    transform: translateX(-15px) rotate(3.6deg);
+  }
+  60% {
+    transform: translateX(9px) rotate(-2.4deg);
+  }
+  75% {
+    transform: translateX(-6px) rotate(1.2deg);
+  }
+}
+
+.contenedor-pelicula {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.contenedor-pelicula .caja-pelicula {
+  width: 800px;
+  height: 500px;
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+  overflow: hidden;
+}
+.contenedor-pelicula .caja-pelicula img {
+  object-fit: cover;
+  width: 80%;
+  height: 60%;
+  object-fit: contain;
+}
+
+@media (min-width: 375px) and (max-width: 420px) {
+  .contenedor-pelicula {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
