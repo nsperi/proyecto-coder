@@ -1,27 +1,29 @@
 .caja-fondo{
-    background: #fff url(../images/fondo.jpg) center center/cover no-repeat;
+    background: radial-gradient( #242424 48%, #000 81%);
     .titulo{
         min-height: 900px;
         display: flex;
         align-items: center;
         justify-content: center;
         #titulo-principal {
-            font-family: "Monoton";
-            font-size: 150px;
-            text-shadow: -15px -13px 5px #434343;
-            animation: myAnim 2s ease 0s 1 normal forwards;
-            @keyframes myAnim {
-                0%,
-                50%,
-                100% {
-                    opacity: 1;
-                }
-            
-                25%,
-                75% {
-                    opacity: 0;
-                }
-            }
+            -webkit-box-sizing: content-box;
+            -moz-box-sizing: content-box;
+            box-sizing: content-box;
+            padding: 20px;
+            border: none;
+            font: normal 125px/1 "Monoton", Helvetica, sans-serif;
+            color: rgba(255,255,255,1);
+            text-align: center;
+            -o-text-overflow: ellipsis;
+            text-overflow: ellipsis;
+            text-shadow: 0 0 10px rgb(255,255,255) , 0 0 20px rgb(255,255,255) , 0 0 30px rgb(255,255,255) , 0 0 40px rgb(255,17,119) , 0 0 70px rgb(255,17,119) , 0 0 80px rgb(255,17,119) , 0 0 100px rgb(255,17,119) , 0 0 150px rgb(255,17,119) ;
+            -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+            -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+            -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+            transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1) 10ms;
+            &:hover {
+                text-shadow: 0 0 5px rgb(255,255,255) , 0 0 10px rgb(255,255,255) , 0 0 15px rgb(255,255,255) , 0 0 20px rgb(255,17,119) , 0 0 35px rgb(255,17,119) , 0 0 40px rgb(255,17,119) , 0 0 50px rgb(255,17,119) , 0 0 75px rgb(255,17,119) ;
+              }
         }
     }
 }
