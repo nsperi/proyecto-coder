@@ -1,0 +1,17 @@
+.recomendada{
+    display: flex;
+    flex-direction: column;
+    width: 70%px;
+    object-fit: cover;
+    border: #2c1001 solid;
+    background: #3F3D3D;
+    scroll-snap-align: center;
+    overflow: hidden;
+    align-items: center;
+    margin: 50px;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, inset -4px -4px 23px 7px rgba(0,0,0,0.83); 
+    box-shadow: 0px 10px 13px -7px #000000, inset -4px -4px 23px 7px rgba(0,0,0,0.83);
+    p{
+        margin: 50px;
+    }
+}

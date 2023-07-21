@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <title>La recomendada de la semana</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
@@ -12,22 +13,53 @@
 
     <header>
 
-        <nav>
-            <ul class="menu">
-                <div>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./categorias.html">Categorías</a></li>
-                    <li><a href="./los_out.html">Los OUT</a></li>
-                    <li><a href="">La recomendación de la semana</a></li>
-                    <li><a href="./bonus-track-series.html">Bonus Track SERIES</a></li>
+        <div class="respmenu">
+
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="#"><img src="../images/logo.png" alt="" ></a>
+
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">☰</span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../pages/categorias.html">Categorias</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../pages/los_out.html">Los OUT</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../pages/recomendada.html">La recomendación de la semana</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../pages/bonus-track-series.html">Bonus Track SERIES</a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-            </ul>
-        </nav>
+              </nav>
+
+        </div>
         <h1 class="titulo-seccion">La recomendada de la semana</h1>
 
     </header>
 
     <main>
+
+      <div class="recomendada">
+        <h2>The Unbearable Weight of Massive Talent</h2>
+        <img src="../images/peliculas/unbearable.jpg" alt="The Unbearable Weight of Massive Talent">
+        <p>
+          Solo Nicolas Cage puede hacer una película sobre un personaje llamado Nick Cage que, dentro de la historia, explora a los personajes que han marcado la carrera del actor real. Gormican dijo en una entrevista que le costó trabajo convencerlo, pero que, una vez que se dio cuenta de que no se estaban burlando de él, no dudó en aceptar el proyecto y darle todo lo que tiene.
+          Hay que recordar que este es un actor experto en crear personajes e historias perturbadoras, locas, extravagantes y raras, y aquí explota esto de una forma extraordinaria. Aquí demuestra que él no encaja en una categoría o estereotipo, sino que es uno propio y por sí mismo, y que tiene el poder de elevar cualquier historia que toca y de volverla más interesante y atrapante.
+          Vemos a un hombre que acepta la locura, sus excesos y lo inesperado, y lo usa a su favor.
+        </p>
+      </div>
 
     </main>
 
@@ -61,6 +93,6 @@
         </form>
 
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>

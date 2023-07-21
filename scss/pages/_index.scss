@@ -4,14 +4,19 @@ nav {
     border: 6px dotted #7B59A4;
     border-radius: 40px 40px 40px 40px;
     float: left;
-    width: 100%; 
+    width: 70%; 
     margin: 10px;
-    .menu {
+    .container {
         display: flex;
         list-style: none;
         overflow: hidden;
         align-items: center;
         justify-content: space-around;
+        flex-wrap: wrap;
+        a img {
+            width: 40px;
+            height: 40px;
+        }
         li {
             float: left;
             font-size: 20px;
@@ -29,46 +34,13 @@ nav {
                 padding: 10px;
                 text-align:justify;
                 line-height: 3;
-                color:rgb(255, 17, 119);
                 align-content: center;
             }
         }
-    }
-}
-
-@media (min-width: 375px) and (max-width: 420px) {
-    nav .menu{
-        display: none;
-    }
-
-    input:checked ~ ul{
-        display: block;
-    }
-
-    nav input{
-        display: none;
-        visibility: hidden;
-    }
-
-    .icono-b{
-        box-sizing: border-box;
-        display: inline-block;
-        border: 1px solid black;
-        border-radius: 5px;
-        width: 30px;
-        height: 30px;
-        line-height: 30px;
-        font-weight: bold;
-        text-align: center;
-        user-select: none;
-    }
-
-    menu .li{
-        display: block;
-        background: lightgrey;
-        margin: 0;
-        padding: 10px;
-        list-style: none;
-        border-bottom: 1px solid grey;
+        li.nav-item{
+            a{
+                color:rgb(255, 17, 119);
+            }
+        }
     }
 }

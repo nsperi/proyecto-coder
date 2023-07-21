@@ -5,6 +5,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        width: 100%;
         #titulo-principal {
             -webkit-box-sizing: content-box;
             -moz-box-sizing: content-box;
@@ -29,5 +30,10 @@
 }
 
 .titulo-seccion{
-    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    object-fit: center;
 }
