@@ -55,30 +55,41 @@ footer .formulario {
 }
 
 nav {
-  padding: 10px;
   font-weight: bold;
+  background-color: #242424;
+  border: 6px dotted #7B59A4;
+  border-radius: 40px 40px 40px 40px;
+  float: left;
+  width: 100%;
+  margin: 10px;
 }
 nav .menu {
   display: flex;
-  gap: 1rem;
   list-style: none;
+  overflow: hidden;
+  align-items: center;
+  justify-content: space-around;
 }
 nav .menu li {
-  display: inline;
-  border-right: 1px solid #9B9A9A;
-  list-style: none outside none;
-  padding-left: 5px;
-  padding-right: 5px;
-  width: 10%;
+  float: left;
+  font-size: 20px;
 }
 nav .menu li:hover {
-  background-color: black;
+  background: orange;
+  border-radius: 40px 40px 40px 40px;
 }
 nav .menu li:last-child {
   border-right: none;
 }
 nav .menu li a {
+  outline: none;
   text-decoration: none;
+  display: block;
+  padding: 10px;
+  text-align: justify;
+  line-height: 3;
+  color: rgb(255, 17, 119);
+  align-content: center;
 }
 
 @media (min-width: 375px) and (max-width: 420px) {
@@ -118,20 +129,36 @@ nav .menu li a {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  object-fit: center;
 }
 .contenedor-cat .caja-seccion {
   width: 300px;
-  height: 300px;
+  height: 350px;
   margin: 20px;
   padding: 10px;
   text-align: center;
   overflow: hidden;
+  background: #3F3D3D;
+  object-fit: cover;
 }
 .contenedor-cat .caja-seccion img {
   object-fit: cover;
   width: 100%;
   height: 100%;
   padding: auto;
+}
+.contenedor-cat .caja-seccion a {
+  outline: none;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  text-align: center;
+  color: rgb(255, 17, 119);
+  align-content: center;
+}
+.contenedor-cat .caja-seccion:hover {
+  background: orange;
+  border-radius: 40px 40px 40px 40px;
 }
 
 @media (min-width: 375px) and (max-width: 420px) {
@@ -142,7 +169,7 @@ nav .menu li a {
 .contenedor-pelicula {
   display: flex;
   width: 100%;
-  height: 70vh;
+  height: 90vh;
   overflow-x: scroll;
   object-fit: center;
 }
@@ -154,42 +181,26 @@ nav .menu li a {
   height: 600px;
   object-fit: cover;
   border: #2c1001 solid;
-  background: #fff;
+  background: #3F3D3D;
   scroll-snap-align: center;
   overflow: hidden;
+  align-items: center;
+  margin: 50px;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, inset -4px -4px 23px 7px rgba(0, 0, 0, 0.83);
+  box-shadow: 0px 10px 13px -7px #000000, inset -4px -4px 23px 7px rgba(0, 0, 0, 0.83);
 }
 .contenedor-pelicula .caja-pelicula img {
+  width: 600px;
+  height: 380px;
   object-fit: cover;
-  width: 50%;
-  height: 50%;
-  padding: 50px;
-  animation: myAnim 2s ease 0s 1 normal forwards;
-  position: absolute;
-  top: 50px;
-  left: 50px;
-  align-items: center;
-  justify-content: center;
+  padding: 10px;
 }
-@keyframes myAnim {
-  0%, 100% {
-    transform: translateX(0%);
-    transform-origin: 50% 50%;
-  }
-  15% {
-    transform: translateX(-30px) rotate(6deg);
-  }
-  30% {
-    transform: translateX(15px) rotate(-6deg);
-  }
-  45% {
-    transform: translateX(-15px) rotate(3.6deg);
-  }
-  60% {
-    transform: translateX(9px) rotate(-2.4deg);
-  }
-  75% {
-    transform: translateX(-6px) rotate(1.2deg);
-  }
+.contenedor-pelicula .caja-pelicula h2 {
+  margin-top: 10px;
+}
+.contenedor-pelicula .caja-pelicula p {
+  padding: 10px;
+  text-align: center;
 }
 
 @media (min-width: 375px) and (max-width: 420px) {
