@@ -1,17 +1,32 @@
-.recomendada{
+.recomendada {
     display: flex;
     flex-direction: column;
-    width: 70%px;
-    object-fit: cover;
-    border: #2c1001 solid;
-    background: #3F3D3D;
-    scroll-snap-align: center;
-    overflow: hidden;
     align-items: center;
-    margin: 50px;
-    -webkit-box-shadow: 0px 10px 13px -7px #000000, inset -4px -4px 23px 7px rgba(0,0,0,0.83); 
+    border: 1px solid #2c1001;
+    background: #3F3D3D;
+    padding: 50px;
     box-shadow: 0px 10px 13px -7px #000000, inset -4px -4px 23px 7px rgba(0,0,0,0.83);
-    p{
-        margin: 50px;
+    .img-recomendada{
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px;
     }
-}
+    p {
+        text-align: justify;
+        margin: 0;
+        margin-bottom: 20px;
+      }
+  }
+  
+@media (max-width: 767px) {
+    .img-recomendada {
+        width: 80%;
+      }
+    }
+  
+@media (min-width: 768px) and (max-width: 991px) {
+    .img-recomendada {
+        width: 90%;
+      }
+    }
